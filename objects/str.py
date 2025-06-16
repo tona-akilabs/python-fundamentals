@@ -32,3 +32,18 @@ print(name.rjust(20, '*'))  # right justify the string in a field of width 20, p
 print(name.zfill(10))  # pad the string with zeros on the left to make it 10 characters long
 print(name.format('World'))  # format the string with 'World'
 print('python programming'.title())  # capitalize the first character of each word
+
+print('Hello, {}!'.format('World'))  # format the string with 'World'
+print(f'Hello, {name}!')  # f-string formatting
+
+print(name + ' is a programming language.')  # string concatenation
+print(name .__add__(' is a programming language.'))  # using __add__ method
+
+S = 'A\nB\tC'
+print(S)  # prints A, B, C with newline and tab
+print(len(S)) # length of the string, including newline and tab characters
+S = 'A\0B\0C'
+print(len(S)) # length of the string, including null characters
+print(S)  # prints A, B, C with null characters
+
+print(S .encode('utf-8'))  # encode the string to bytes using utf-8 encoding
